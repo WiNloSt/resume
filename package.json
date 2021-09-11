@@ -8,9 +8,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "ejs": "^3.1.6",
+    "rehype-raw": "^6.1.0",
+    "rehype-stringify": "^9.0.2",
     "remark": "^14.0.1",
+    "remark-custom-blocks": "^2.5.1",
     "remark-gfm": "^2.0.0",
-    "remark-html": "^14.0.1"
+    "remark-parse": "^8",
+    "remark-rehype": "^9.0.0"
   },
   "devDependencies": {
     "live-server": "^1.2.1"

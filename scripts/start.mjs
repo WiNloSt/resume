@@ -1,21 +1,35 @@
 import fs from "node:fs"
+import path from "node:path"
 import { unified } from "unified"
 import remarkParse from "remark-parse"
-import remarkHtml from "remark-html"
 import remarkGfm from "remark-gfm"
+import remarkRehype from "remark-rehype"
+import rehypeRaw from "rehype-raw"
+import rehypeStringify from "rehype-stringify"
+import remarkCustomBlocks from "remark-custom-blocks"
 import liveServer from "live-server"
+import ejs from "ejs"
 
-const INPUT_MD_PATH = "resume.md"
+const SRC_PATH = "src"
+const INPUT_MD_PATH = "src/resume.md"
+const OUTPUT_PATH = "dist"
 const OUTPUT_HTML_PATH = "dist/resume.html"
 
 buildResumeHtmlForDevelopment()
-fs.watch(INPUT_MD_PATH, (event, filename) => {
+copyStaticFileToBuildDirectory(`${SRC_PATH}/style.css`)
+
+fs.watch(SRC_PATH, (event, filename) => {
   if (filename && event === "change") {
-    buildResumeHtmlForDevelopment()
+    if (filename.includes("resume.md")) {
+      buildResumeHtmlForDevelopment()
+    }
+    if (filename.includes("style.css")) {
+      copyStaticFileToBuildDirectory(`${SRC_PATH}/style.css`)
+    }
   }
 })
+
 liveServer.start({
-  // host: '0.0.0.0',
   open: "/resume.html",
   root: "dist",
 })
@@ -24,14 +38,49 @@ function buildResumeHtmlForDevelopment() {
   unified()
     .use(remarkParse)
     .use(remarkGfm)
-    .use(remarkHtml, {sanitize:false})
+    .use(remarkCustomBlocks, {
+      header: {
+        classes: "text-center",
+      },
+      body: {
+        classes: 'body'
+      },
+      skills: {
+        classes: 'skills horizontal-list'
+      },
+      personalInformation: {
+        classes: "personal-information horizontal-list",
+      },
+    })
+    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(rehypeRaw)
+    .use(rehypeStringify)
     .process(fs.readFileSync(INPUT_MD_PATH))
     .then((file) => {
-      return fs.promises.writeFile(
-        OUTPUT_HTML_PATH,
-        `<body>
-${file}
-</body>`
-      )
+      const templateData = { bodyChild: String(file) }
+      const htmlString = ejs.render(HTML_TEMPLATE, templateData)
+      return fs.promises.writeFile(OUTPUT_HTML_PATH, htmlString)
     })
+}
+
+const HTML_TEMPLATE = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>My awesome resume</title>
+</head>
+<body>
+  <%- bodyChild %>
+</body>
+</html>`
+
+function copyStaticFileToBuildDirectory(fileToCopy) {
+  fs.copyFile(fileToCopy, `${OUTPUT_PATH}/${path.parse(fileToCopy).base}`, (error) => {
+    if (error) {
+      throw error
+    }
+  })
 }
