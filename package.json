@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "A source code to my resume",
+  "main": "index.js",
+  "repository": "https://github.com/WiNloSt/resume.git",
+  "author": "Mahatthana Nomsawadi <me@bboykelvin.dev>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "remark": "^14.0.1",
+    "remark-gfm": "^2.0.0",
+    "remark-html": "^14.0.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "start": "node scripts/start.mjs"
+  }
+}
