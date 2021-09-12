@@ -1,4 +1,4 @@
-- [Email](me@bboykelvin.dev)
+- [Email](mailto:me@bboykelvin.dev)
 - [GitHub](https://github.com/winlost)
 - [LinkedIn](http://linkedin.com/in/kelvin-nomsawadi)
 - [Medium](https://medium.com/@winlost)
