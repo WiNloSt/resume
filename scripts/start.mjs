@@ -37,6 +37,7 @@ liveServer.start({
 
 function buildResumeHtmlForDevelopment() {
   const markdown = templateEngine.parse(INPUT_MD_PATH)
+  // console.log('markdown', markdown)
   unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -44,8 +45,17 @@ function buildResumeHtmlForDevelopment() {
       header: {
         classes: "text-center",
       },
+      personalInformation: {
+        classes: "personal-information horizontal-list",
+      },
       body: {
-        classes: "body",
+        classes: 'body'
+      },
+      bodyLeftColumn: {
+        classes: "body-right-column",
+      },
+      bodyRightColumn: {
+        classes: "body-left-column",
       },
       skills: {
         classes: "skills horizontal-list",
@@ -53,9 +63,9 @@ function buildResumeHtmlForDevelopment() {
       educationDetails: {
         classes: "space-between font-soft",
       },
-      personalInformation: {
-        classes: "personal-information horizontal-list",
-      },
+      talkDetails: {
+        classes: 'horizontal-list'
+      }
     })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
@@ -77,7 +87,7 @@ const HTML_TEMPLATE = `<!DOCTYPE html>
     <link rel="stylesheet" href="style.css" />
     <title>My awesome resume</title>
 </head>
-<body>
+<body class='a4'>
   ${"${data.bodyChild}"}
 </body>
 </html>`

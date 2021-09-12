@@ -7,4 +7,7 @@ ${includeWithPrefix('./personal-information.md', '|')}
 ---
 
 [[body]]
-${includeWithPrefix('./body.md', '|')}
+|[[bodyLeftColumn]]
+${includeWithPrefix('./body-left-column.md', '||')}
+|[[bodyRightColumn]]
+${includeWithPrefix('./body-right-column.md', '||')}

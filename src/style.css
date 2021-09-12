@@ -1,13 +1,32 @@
 :root {
-  font-size: 12px;
-  color: #222;
+  --font-base: 14px;
+  --font-md: 16px;
+  --font-lg: 22px;
+  --space-sm: 0.25rem;
+  --space: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.25rem;
+  --space-2xl: 2rem;
+
+  font-size: var(--font-base);
+  color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.3;
-  --space-sm: 0.25em;
-  --space: 0.5em;
-  --space-lg: 0.75em;
-  --space-xl: 1.25em;
-  --space-2xl: 2em;
+}
+
+.a4 {
+  border: 1px solid #666;
+  /* 3/8 inch */
+  padding: 0.5in 0.375in;
+  width: 210mm;
+  height: 296mm;
+}
+
+@media print {
+  .a4 {
+    border: none;
+  }
 }
 
 .text-center {
@@ -19,11 +38,16 @@
   color: #777;
 }
 
-.horizontal-list :is(ul, ol) {
+.custom-block-body {
+  margin-bottom: var(--space-lg);
+}
+
+.horizontal-list ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
+  margin-bottom: calc(-1 * var(--space-sm));
 }
 
 .horizontal-list li {
@@ -31,8 +55,10 @@
   margin-bottom: var(--space-sm);
 }
 
-.body {
-  column-count: 2;
+.body > .custom-block-body {
+  display: grid;
+  gap: var(--space-2xl);
+  grid-template-columns: 5fr 5fr;
 }
 
 .personal-information .custom-block-body ul {
@@ -46,16 +72,12 @@
   content: "|";
 }
 
-.personal-information .custom-block-body a,
+a,
 a:visited {
-  color: blue;
+  color: rgb(28, 123, 231);
 }
 
-.skills {
-  margin: 0;
-}
-
-.skills ul li:not(:last-child):after {
+.horizontal-list ul li:not(:last-child):after {
   font-weight: 700;
   content: "•";
   margin-left: var(--space-sm);
@@ -71,9 +93,15 @@ a:visited {
   margin: 0;
 }
 
+ul {
+  /* Space before bullet points */
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
 li {
   margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-bottom: var(--space-sm);
 }
 
 h1,
@@ -82,40 +110,43 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1.2;
   margin-top: 0;
+}
+
+div,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
+  font-size: var(--font-lg);
 }
 
 h2 {
   text-transform: uppercase;
-  margin-bottom: var(--space-sm);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space);
+  font-size: var(--font-md);
 }
 
-/* Section style */
-
 h3 {
-  font-size: 16px;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-base);
+  font-weight: 500;
 }
 
 h4 {
-  font-size: 14px;
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-base);
+  font-weight: 500;
 }
 
-/* All subheader descriptions margin e.g. Company & position */
-h3 ~ h4 {
-  margin-top: calc(-1 * var(--space-lg));
-}
-
-h4 ~ :is(p, div) {
-  margin-top: calc(-1 * var(--space-xl));
-}
-
-h3 {
-  margin-bottom: var(--space-lg);
-}
-
-ul,
-ol {
-  /* Space before bullet points */
-  margin-top: calc(-1 * var(--space));
-  padding-left: var(--space-2xl);
+p {
+  margin-bottom: 0;
 }
