@@ -8,7 +8,8 @@ import rehypeRaw from "rehype-raw"
 import rehypeStringify from "rehype-stringify"
 import remarkCustomBlocks from "remark-custom-blocks"
 import liveServer from "live-server"
-import ejs from "ejs"
+
+import templateEngine from "./templateEngine.mjs"
 
 const SRC_PATH = "src"
 const INPUT_MD_PATH = "src/resume.md"
@@ -20,7 +21,7 @@ copyStaticFileToBuildDirectory(`${SRC_PATH}/style.css`)
 
 fs.watch(SRC_PATH, (event, filename) => {
   if (filename && event === "change") {
-    if (filename.includes("resume.md")) {
+    if (filename.includes(".md")) {
       buildResumeHtmlForDevelopment()
     }
     if (filename.includes("style.css")) {
@@ -35,6 +36,7 @@ liveServer.start({
 })
 
 function buildResumeHtmlForDevelopment() {
+  const markdown = templateEngine.parse(INPUT_MD_PATH)
   unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -43,22 +45,25 @@ function buildResumeHtmlForDevelopment() {
         classes: "text-center",
       },
       body: {
-        classes: 'body'
+        classes: "body",
       },
       skills: {
-        classes: 'skills horizontal-list'
+        classes: "skills horizontal-list",
+      },
+      educationDetails: {
+        classes: "space-between font-soft",
       },
       personalInformation: {
         classes: "personal-information horizontal-list",
       },
     })
-    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeStringify)
-    .process(fs.readFileSync(INPUT_MD_PATH))
+    .process(markdown)
     .then((file) => {
       const templateData = { bodyChild: String(file) }
-      const htmlString = ejs.render(HTML_TEMPLATE, templateData)
+      const htmlString = templateEngine.parseString(HTML_TEMPLATE, templateData)
       return fs.promises.writeFile(OUTPUT_HTML_PATH, htmlString)
     })
 }
@@ -73,7 +78,7 @@ const HTML_TEMPLATE = `<!DOCTYPE html>
     <title>My awesome resume</title>
 </head>
 <body>
-  <%- bodyChild %>
+  ${"${data.bodyChild}"}
 </body>
 </html>`
 

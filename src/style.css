@@ -1,15 +1,22 @@
 :root {
   font-size: 12px;
-  color: #333;
+  color: #222;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.3;
   --space-sm: 0.25em;
   --space: 0.5em;
   --space-lg: 0.75em;
+  --space-xl: 1.25em;
+  --space-2xl: 2em;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-soft {
+  font-weight: 400;
+  color: #777;
 }
 
 .horizontal-list :is(ul, ol) {
@@ -55,6 +62,15 @@ a:visited {
   margin-right: var(--space-sm);
 }
 
+.space-between > .custom-block-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-between p {
+  margin: 0;
+}
+
 li {
   margin-top: var(--space);
   margin-bottom: var(--space);
@@ -74,17 +90,32 @@ h2 {
   margin-bottom: var(--space-sm);
 }
 
+/* Section style */
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
 /* All subheader descriptions margin e.g. Company & position */
-h3 ~ p {
+h3 ~ h4 {
   margin-top: calc(-1 * var(--space-lg));
+}
+
+h4 ~ :is(p, div) {
+  margin-top: calc(-1 * var(--space-xl));
 }
 
 h3 {
   margin-bottom: var(--space-lg);
 }
 
-/* Space before bullet points */
 ul,
 ol {
-  margin-top: calc(-1 * var(--space-lg));
+  /* Space before bullet points */
+  margin-top: calc(-1 * var(--space));
+  padding-left: var(--space-2xl);
 }
