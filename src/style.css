@@ -126,8 +126,7 @@ ul {
 }
 
 h1 {
-  margin-bottom: var(--space-sm);
-  margin-bottom: 0;
+  margin-bottom: var(--space-lg);
   font-size: var(--font-xl);
 }
 
@@ -148,7 +147,7 @@ h3 {
 h4 {
   margin-top: var(--space-md);
   margin-bottom: var(--space-sm);
-  font-size: var(--font-md);
+  font-size: var(--font-base);
   font-weight: var(--font-normal);
 }
 
@@ -158,4 +157,8 @@ h3 + h4 {
 
 p {
   margin-bottom: 0;
+}
+
+.page-breaker {
+  margin-bottom: 9999px;
 }

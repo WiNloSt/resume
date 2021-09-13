@@ -26,11 +26,11 @@
 
 <span class="font-soft">(01/2020-present)</span>
 
-- Led team of 3 to deliver product features every 2 weeks.
-- Configured CI/CD pipeline to streamline planning, testing, and deployment process on all environments.
-- Coached engineers by providing guidance and resources resulting in more motivated and happier team members.
-- Evaluated potential technologies and incorporated into product to increase development speed.
-- Organized 5 hackathons in last 2 years; learned technologies and concepts such as event-driven architecture, NoSQL, real-time notification, and end-to-end testing.
+- Lead team of 3 to deliver product features every 2 weeks under complex and ambiguous requirements.
+- Configure CI/CD pipeline to streamline planning, testing, and deployment process on all environments eliminating manual steps and reducing risk of human error.
+- Coach engineers by providing guidance and resources resulting in more motivated and happier team members.
+- Evaluate potential technologies and incorporated into product to increase development speed by over 30%.
+- Organize 5 hackathons in last 2 years broadening engineers knowledge areas;integrate 2 projects from hackathons into product increasing first contact resolution rate and reducing chances issues escalated to developers by over 50%.
 
 ### Software engineer
 
@@ -38,11 +38,10 @@
 
 <span class="font-soft">(08/2016-01/2020)</span>
 
-- Developed and maintained satisfaction survey using React and Django serving over 8M users and 9M feedback.
-- Collaborated with PO, Marketing, designer, and engineer in a Scrum team to build and support product features.
-- Conducted pair programming with other engineers to expand individual knowledge in different areas.
-- Negotiated with PO to come up with efficient solutions satisfying both business and customers.
-- Built internal tools to reduce overhead and automate mundane tasks.
+- Created and maintained satisfaction survey using React and Django serving over 8M users and 9M feedback.
+- Conducted pair programming with other engineers to expand individual knowledge in other areas making better cross-functional team.
+- Negotiated with PO to come up with efficient solutions satisfying both business and customers within time constraints.
+- Built internal tools to reduce overhead and automate mundane tasks to increase develop speed.
 
 ### Software engineer
 
@@ -60,8 +59,7 @@
 
 <span class="font-soft">(04/2014-05/2015)</span>
 
-- Developed backend services using Spring (Java).
-- Learned how to work in a Scrum team.
+- Cooperated with local and international team members to develop software for securely processing and transforming physical documents into digital format.
 
 ## Educations
 
@@ -70,6 +68,8 @@
 #### Chulalongkorn University <span class="font-soft">| Bangkok, TH</span>
 
 <span class='font-soft'>(2010-2014) | GPA 3.65/4 (First Class Honours)</span>
+
+<div class="page-breaker"></div>
 
 ## Skills
 
@@ -152,7 +152,7 @@
 
 <span class="font-soft">(02/2020)</span>
 
-- Led networking activities for hundreds of attendants.
+- Organized networking activities for hundreds of attendants.
 
 ### [PyLady Bangkok](https://www.eventpop.me/e/7078-pyladiesbkk)
 
@@ -164,13 +164,13 @@
 
 <span class="font-soft">(06/2018)</span>
 
-- Created networking companion web application used by more than 500 attendants.
+- Pioneered networking companion web application used by more than 500 attendants.
 
 ### [React Bangkok 2.0.0](https://www.eventpop.me/e/1809-react-bangkok-2-0-0)
 
 <span class="font-soft">(06/2017)</span>
 
-- Led networking activities for over 100 people.
+- Directed networking activities for over 100 people.
 
 ## Talk
 
