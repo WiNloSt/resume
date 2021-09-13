@@ -6,10 +6,9 @@ import remarkGfm from "remark-gfm"
 import remarkRehype from "remark-rehype"
 import rehypeRaw from "rehype-raw"
 import rehypeStringify from "rehype-stringify"
-import remarkCustomBlocks from "remark-custom-blocks"
 import liveServer from "live-server"
 
-import templateEngine from "./templateEngine.mjs"
+import templateEngine from './templateEngine.mjs'
 
 const SRC_PATH = "src"
 const INPUT_MD_PATH = "src/resume.md"
@@ -36,37 +35,10 @@ liveServer.start({
 })
 
 function buildResumeHtmlForDevelopment() {
-  const markdown = templateEngine.parse(INPUT_MD_PATH)
-  // console.log('markdown', markdown)
+  const markdown = fs.readFileSync(INPUT_MD_PATH)
   unified()
     .use(remarkParse)
     .use(remarkGfm)
-    .use(remarkCustomBlocks, {
-      header: {
-        classes: "text-center",
-      },
-      personalInformation: {
-        classes: "personal-information horizontal-list",
-      },
-      body: {
-        classes: 'body'
-      },
-      bodyLeftColumn: {
-        classes: "body-right-column",
-      },
-      bodyRightColumn: {
-        classes: "body-left-column",
-      },
-      skills: {
-        classes: "skills horizontal-list",
-      },
-      educationDetails: {
-        classes: "space-between font-soft",
-      },
-      talkDetails: {
-        classes: 'horizontal-list'
-      }
-    })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeStringify)
