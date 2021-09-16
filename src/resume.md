@@ -20,19 +20,19 @@
 
 ## Work Experience
 
-### Technical lead/development manager
+### Technical Lead/Development Manager
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
 <span class="font-soft">(01/2020-present)</span>
 
 - Lead team of 3 to deliver product features every 2 weeks under complex and ambiguous requirements.
-- Configure CI/CD pipeline to streamline planning, testing, and deployment process on all environments eliminating manual steps and reducing risk of human error.
+- Evaluate potential technologies and incorporate into product to increase development speed by over 30%.
+- Organize 5 hackathons in last 2 years broadening engineer knowledge areas;integrate 2 projects from hackathons into product increasing first contact resolution rate and reducing chances customer issues escalated to developers by over 50%.
+- Configure CI/CD pipeline to streamline planning, testing, and deployment process on all environments eliminating manual steps and reducing risks of human error.
 - Coach engineers by providing guidance and resources resulting in more motivated and happier team members.
-- Evaluate potential technologies and incorporated into product to increase development speed by over 30%.
-- Organize 5 hackathons in last 2 years broadening engineers knowledge areas;integrate 2 projects from hackathons into product increasing first contact resolution rate and reducing chances issues escalated to developers by over 50%.
 
-### Software engineer
+### Software Engineer
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
@@ -40,20 +40,19 @@
 
 - Created and maintained satisfaction survey using React and Django serving over 8M users and 9M feedback.
 - Conducted pair programming with other engineers to expand individual knowledge in other areas making better cross-functional team.
-- Negotiated with PO to come up with efficient solutions satisfying both business and customers within time constraints.
+- Negotiated with PO to come up with efficient solutions satisfying both business and customer needs within time constraints.
+- Set up log monitor enabling support team to troubleshoot customer problems.
 - Built internal tools to reduce overhead and automate mundane tasks to increase develop speed.
 
-### Software engineer
+### Software Engineer
 
 #### CODIUM <span class="font-soft">| Bangkok, TH</span>
 
 <span class="font-soft">(06/2015-04/2016)</span>
 
-- Developed backend services using Django (Python).
-- Developed frontend application using Angular.
-- Configured CI/CD pipeline.
+- Involved in full software development life cycle, from planning to deployment for a cloud storage application.
 
-### Software engineer
+### Software Engineer
 
 #### DST Worldwide Services (Thailand) Limited <span class="font-soft">| Bangkok, TH</span>
 
@@ -61,7 +60,7 @@
 
 - Cooperated with local and international team members to develop software for securely processing and transforming physical documents into digital format.
 
-## Educations
+## Education
 
 ### Bachelor of Engineering in Computer Engineering
 
@@ -86,11 +85,12 @@
 - Storybook
 - Django
 - Node.js
+- Pytest
 - Jest
 - HTML
 - CSS
 - Docker
-- Cloud Functions
+- Google Cloud Functions
 - AWS
 - PostgreSQL
 - Cloud Firestore
@@ -110,6 +110,7 @@
 - Java
 - Nginx
 - Caddy
+- Hasura
 - GraphQL
 - MongoDB
 - DynamoDB
@@ -126,7 +127,7 @@
 
 </div>
 
-### Soft skills
+### Soft Skills
 
 <div class="horizontal-list bullet">
 
@@ -146,7 +147,7 @@
 
 </div>
 
-## Community Organizer
+## Volunteer Experience
 
 ### [JavaScript Bangkok 1.0.0](https://javascriptbangkok.com/)
 
@@ -164,7 +165,7 @@
 
 <span class="font-soft">(06/2018)</span>
 
-- Pioneered networking companion web application used by more than 500 attendants.
+- Pioneered [networking companion web application](https://github.com/WiNloSt/react-bangkok-connect) used by over 500 attendants.
 
 ### [React Bangkok 2.0.0](https://www.eventpop.me/e/1809-react-bangkok-2-0-0)
 
@@ -172,22 +173,22 @@
 
 - Directed networking activities for over 100 people.
 
-## Talk
+## Talks
 
 ### [React Meetup by DevC BKK](https://www.facebook.com/events/860921194279546/)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1XyBmTglHlI4-IB0CbkeflBTyigjnVC4c_qiAyQO2BS4/edit) | [Demo](https://github.com/WiNloSt/devc-react-suspense/tree/suspend)</span>
 
-<span class="font-soft">(07/2019) | React suspense on steroids (data fetching)</span>
+<span class="font-soft">(07/2019) | Data fetching with React Suspense</span>
 
-### [Tencent Thailand open house: Productivity in software development](https://www.eventpop.me/e/4745)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1udL5AYZxu4VjomkeVp-rzb4I_DioTUsEr5IJ9d70kyY/edit#slide=id.p4)</span>
+### [Tencent Thailand Open House: Productivity in Software Development](https://www.eventpop.me/e/4745)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1udL5AYZxu4VjomkeVp-rzb4I_DioTUsEr5IJ9d70kyY/edit#slide=id.p4)</span>
 
-<span class="font-soft">(06/2019) | 13 Random tips to boost your productivity </span>
+<span class="font-soft">(06/2019) | 13 tips to boost your productivity</span>
 
 ### [Barcamp Bangkok 2018](https://www.barcampbangkok.org/barcamp-bangkok-2018-at-tk-park/)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1tMgemG9-5Q3KrizzmqM6KF6z0dCMfpDrBIzCrL0hDks/edit)</span>
 
-<span class="font-soft">(08/2018) | Effective communication </span>
+<span class="font-soft">(08/2018) | Effective communication</span>
 
 ### [React Bangkok Meetup 1.1.0](https://www.eventpop.me/e/1363)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1Qi8PovLsy4wy6LM5vKXgL473C6AoItwMl-d7JhtLdvk/edit#slide=id.gc6f919934_0_0)</span>
 
-<span class="font-soft">(01/2017) | How non-React developers kick-off a React project </span>
+<span class="font-soft">(01/2017) | How non-React developers kick-off a React project</span>
 
 </div>
