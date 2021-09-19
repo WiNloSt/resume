@@ -155,7 +155,7 @@
 
 - Organized networking activities for hundreds of attendants.
 
-### [PyLady Bangkok](https://www.eventpop.me/e/7078-pyladiesbkk)
+### [PyLadies Bangkok](https://www.eventpop.me/e/7078-pyladiesbkk)
 
 <span class="font-soft">(10/2019)</span>
 
