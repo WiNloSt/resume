@@ -20,11 +20,21 @@
 
 ## Work Experience
 
+### Frontend Engineer
+
+#### Metabase <span class="font-soft">| Remote</span>
+
+<span class="font-soft">(11/2021 - present)</span>
+
+- Reviewed PRs and provided clear and detailed feedback to improve code quality.
+- Contributed in product design and worked on features from concept to production.
+- Created React embedding SDK release workflow and contributed to other CI workflows.
+
 ### Technical Lead/Development Manager
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(1/2020-11/2021)</span>
+<span class="font-soft">(1/2020 - 11/2021)</span>
 
 - Lead team of 3 to deliver product features every 2 weeks under complex and ambiguous requirements.
 - Evaluate potential technologies and incorporate into product to increase development speed by over 30%.
@@ -36,19 +46,19 @@
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(8/2016-1/2020)</span>
+<span class="font-soft">(8/2016 - 1/2020)</span>
 
 - Created and maintained satisfaction survey using React and Django serving over 8M users and 9M feedback.
 - Conducted pair programming with other engineers to expand individual knowledge in other areas making better cross-functional team.
-- Negotiated with PO to come up with efficient solutions satisfying both business and customer needs within time constraints.
+<!-- - Negotiated with PO to come up with efficient solutions satisfying both business and customer needs within time constraints. -->
 - Set up log monitor enabling support team to troubleshoot customer problems.
 - Built internal tools to reduce overhead and automate mundane tasks to increase develop speed.
 
-### Software Engineer
+<!-- ### Software Engineer
 
 #### CODIUM <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(6/2015-4/2016)</span>
+<span class="font-soft">(6/2015 - 4/2016)</span>
 
 - Involved in full software development life cycle, from planning to deployment for a cloud storage application.
 
@@ -56,7 +66,7 @@
 
 #### DST Worldwide Services (Thailand) Limited <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(4/2014-5/2015)</span>
+<span class="font-soft">(4/2014 - 5/2015)</span> -->
 
 - Cooperated with local and international team members to develop software for securely processing and transforming physical documents into digital format.
 
@@ -66,7 +76,7 @@
 
 #### Chulalongkorn University <span class="font-soft">| Bangkok, TH</span>
 
-<span class='font-soft'>(2010-2014) | GPA 3.65/4 (First Class Honours)</span>
+<span class='font-soft'>(2010 - 2014) | GPA 3.65/4 (First Class Honours)</span>
 
 <div class="page-breaker"></div>
 
@@ -78,24 +88,24 @@
 
 <div class="horizontal-list bullet">
 
+- Code review
 - JavaScript
 - TypeScript
 - React
-- Redux
+- Next.js
 - Storybook
-- Django
+- Clojure
 - Node.js
-- Pytest
+- Cypress
 - Jest
+- Visual regression testing
+- GitHub Actions
 - HTML
 - CSS
 - Docker
-- Google Cloud Functions
-- AWS
+- Cloud Functions
 - PostgreSQL
-- Cloud Firestore
-- CircleCI
-- GitHub Actions
+- AWS
 
 </div>
 
@@ -103,27 +113,26 @@
 
 <div class="horizontal-list bullet">
 
-- Next.js
+- Vite
+- Webpack
+- CircleCI
 - Gatsby
 - Svelte
 - Vue
 - Java
 - Nginx
 - Caddy
-- Hasura
 - GraphQL
+- Django
 - MongoDB
 - DynamoDB
 - AWS Lambda
 - Cloudflare Workers
 - GCP
-- Cypress
 - Puppeteer
 - Pulumi
 - Ansible
-- Webpack
 - Rollup
-- Vite
 
 </div>
 
@@ -131,7 +140,7 @@
 
 <div class="horizontal-list bullet">
 
-- Clean Code
+- Communication
 - Coaching
 - Leadership
 - Public Speaking
