@@ -1,37 +1,39 @@
-import fs from "node:fs"
-import path from "node:path"
-import { unified } from "unified"
-import remarkParse from "remark-parse"
-import remarkGfm from "remark-gfm"
-import remarkRehype from "remark-rehype"
-import rehypeRaw from "rehype-raw"
-import rehypeStringify from "rehype-stringify"
-import liveServer from "live-server"
+import fs from 'node:fs'
+import path from 'node:path'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkGfm from 'remark-gfm'
+import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
+import rehypeStringify from 'rehype-stringify'
+import liveServer from 'live-server'
 
 import templateEngine from './templateEngine.mjs'
 
-const SRC_PATH = "src"
-const INPUT_MD_PATH = "src/resume.md"
-const OUTPUT_PATH = "dist"
-const OUTPUT_HTML_PATH = "dist/resume.html"
+const SRC_PATH = 'src'
+const INPUT_MD_PATH = 'src/resume.md'
+const OUTPUT_PATH = 'dist'
+const OUTPUT_HTML_PATH = 'dist/resume.html'
 
 buildResumeHtmlForDevelopment()
+createBuildDirectory()
 copyStaticFileToBuildDirectory(`${SRC_PATH}/style.css`)
 
 fs.watch(SRC_PATH, (event, filename) => {
-  if (filename && event === "change") {
-    if (filename.includes(".md")) {
+  if (filename && event === 'change') {
+    if (filename.includes('.md')) {
       buildResumeHtmlForDevelopment()
     }
-    if (filename.includes("style.css")) {
+    if (filename.includes('style.css')) {
       copyStaticFileToBuildDirectory(`${SRC_PATH}/style.css`)
     }
   }
 })
 
 liveServer.start({
-  open: "/resume.html",
-  root: "dist",
+  open: true,
+  file: '/resume.html',
+  root: 'dist',
 })
 
 function buildResumeHtmlForDevelopment() {
@@ -60,14 +62,24 @@ const HTML_TEMPLATE = `<!DOCTYPE html>
     <title>My awesome resume</title>
 </head>
 <body class='a4'>
-  ${"${data.bodyChild}"}
+  ${'${data.bodyChild}'}
 </body>
 </html>`
 
+/**
+ *
+ * @param {string} fileToCopy a path of a file to copy to the build directory
+ */
 function copyStaticFileToBuildDirectory(fileToCopy) {
   fs.copyFile(fileToCopy, `${OUTPUT_PATH}/${path.parse(fileToCopy).base}`, (error) => {
     if (error) {
       throw error
     }
   })
+}
+
+function createBuildDirectory() {
+  if (!fs.existsSync(OUTPUT_PATH)) {
+    fs.mkdirSync(OUTPUT_PATH)
+  }
 }
