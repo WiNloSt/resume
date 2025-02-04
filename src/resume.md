@@ -24,7 +24,7 @@
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(01/2020-present)</span>
+<span class="font-soft">(1/2020-11/2021)</span>
 
 - Lead team of 3 to deliver product features every 2 weeks under complex and ambiguous requirements.
 - Evaluate potential technologies and incorporate into product to increase development speed by over 30%.
@@ -36,7 +36,7 @@
 
 #### Simplesat <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(08/2016-01/2020)</span>
+<span class="font-soft">(8/2016-1/2020)</span>
 
 - Created and maintained satisfaction survey using React and Django serving over 8M users and 9M feedback.
 - Conducted pair programming with other engineers to expand individual knowledge in other areas making better cross-functional team.
@@ -48,7 +48,7 @@
 
 #### CODIUM <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(06/2015-04/2016)</span>
+<span class="font-soft">(6/2015-4/2016)</span>
 
 - Involved in full software development life cycle, from planning to deployment for a cloud storage application.
 
@@ -56,7 +56,7 @@
 
 #### DST Worldwide Services (Thailand) Limited <span class="font-soft">| Bangkok, TH</span>
 
-<span class="font-soft">(04/2014-05/2015)</span>
+<span class="font-soft">(4/2014-5/2015)</span>
 
 - Cooperated with local and international team members to develop software for securely processing and transforming physical documents into digital format.
 
@@ -151,7 +151,7 @@
 
 ### [JavaScript Bangkok 1.0.0](https://javascriptbangkok.com/)
 
-<span class="font-soft">(02/2020)</span>
+<span class="font-soft">(2/2020)</span>
 
 - Organized networking activities for hundreds of attendants.
 
@@ -163,13 +163,13 @@
 
 ### [React Bangkok 3.0.0](https://www.eventpop.me/e/3607-react-bangkok-3-0-0)
 
-<span class="font-soft">(06/2018)</span>
+<span class="font-soft">(6/2018)</span>
 
 - Pioneered [networking companion web application](https://github.com/WiNloSt/react-bangkok-connect) used by over 500 attendants.
 
 ### [React Bangkok 2.0.0](https://www.eventpop.me/e/1809-react-bangkok-2-0-0)
 
-<span class="font-soft">(06/2017)</span>
+<span class="font-soft">(6/2017)</span>
 
 - Directed networking activities for over 100 people.
 
@@ -177,18 +177,18 @@
 
 ### [React Meetup by DevC BKK](https://www.facebook.com/events/860921194279546/)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1XyBmTglHlI4-IB0CbkeflBTyigjnVC4c_qiAyQO2BS4/edit) | [Demo](https://github.com/WiNloSt/devc-react-suspense/tree/suspend)</span>
 
-<span class="font-soft">(07/2019) | Data fetching with React Suspense</span>
+<span class="font-soft">(7/2019) | Data fetching with React Suspense</span>
 
 ### [Tencent Thailand Open House: Productivity in Software Development](https://www.eventpop.me/e/4745)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1udL5AYZxu4VjomkeVp-rzb4I_DioTUsEr5IJ9d70kyY/edit#slide=id.p4)</span>
 
-<span class="font-soft">(06/2019) | 13 tips to boost your productivity</span>
+<span class="font-soft">(6/2019) | 13 tips to boost your productivity</span>
 
 ### [Barcamp Bangkok 2018](https://www.barcampbangkok.org/barcamp-bangkok-2018-at-tk-park/)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1tMgemG9-5Q3KrizzmqM6KF6z0dCMfpDrBIzCrL0hDks/edit)</span>
 
-<span class="font-soft">(08/2018) | Effective communication</span>
+<span class="font-soft">(8/2018) | Effective communication</span>
 
 ### [React Bangkok Meetup 1.1.0](https://www.eventpop.me/e/1363)<span class="font-soft"> | [Slide](https://docs.google.com/presentation/d/1Qi8PovLsy4wy6LM5vKXgL473C6AoItwMl-d7JhtLdvk/edit#slide=id.gc6f919934_0_0)</span>
 
-<span class="font-soft">(01/2017) | How non-React developers kick-off a React project</span>
+<span class="font-soft">(1/2017) | How non-React developers kick-off a React project</span>
 
 </div>
